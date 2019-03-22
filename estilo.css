@@ -1,0 +1,51 @@
+/* cenario do game*/
+html{
+    cursor: url(imagens/mata_mosca.png) 30 30, auto;
+}
+
+/* cenario do game*/
+body{ background-image: url(imagens/bg.jpg);
+background-size: 100%;
+}
+
+/* tamanho do mosquito olha*/
+.mosquito1{
+    width: 50px;
+    height: 50px;
+}
+.mosquito2{
+    width: 75px;
+    height: 75px;
+}
+.mosquito3{
+    width: 100px;
+    height: 100px;
+}
+
+/*lado em que o mosquito olha*/
+.ladoA{
+    transform: scaleX(1)
+}
+.ladoB{
+    transform: scaleX(-1)
+}
+
+/*cenario do jogo*/
+.painel{
+    position: absolute;
+    left: 0px;
+    width: 120px;
+    padding: 15px;
+    bottom: 0px;
+    border-top: solid 1px #fff;
+    background-color: #fff;
+    opacity: 0.7;
+}
+.vidas{
+    float: left;
+}
+.cronometro{
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+}
