@@ -3,7 +3,7 @@ var largura = 0
 var vidas = 1
 var tempo = 15
 var criaMosquitoTempo = 1500
-var pontuacao = 0
+var pontos = 0
 
 // identificar nivel e modificar o tempo de acordo com o nivel
 var nivel = window.location.search
@@ -42,8 +42,8 @@ function posicaoRandomica(params) {
     //remover mosquito anterior caso exista
     if (document.getElementById('mosquito')) {
         document.getElementById('mosquito').remove()   
-        pontuacao++
-        console.log(pontuacao)
+        pontos++
+        document.getElementById('pontos').innerHTML = pontos
         if (vidas > 3) {
             window.location.href = 'fim_de_jogo.html'
         } else {
